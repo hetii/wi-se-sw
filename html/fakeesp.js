@@ -9,7 +9,7 @@ const app = express();
 const server = app.listen(PORT, "localhost", () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
-const wss = new WebSocketServer({ server, path: "/ws" });
+const wss = new WebSocketServer({ server, path: "/wisews" });
 
 // -------------------
 // Middleware
