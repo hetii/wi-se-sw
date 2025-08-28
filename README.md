@@ -101,7 +101,7 @@ To build the frontend, and use real esp board you need to follow these steps:
     // Set http://IP:PORT of your board in
     // devConfig.devServer.proxy.target
     proxy: [{
-        context: [ '/token', '/stty', '/gpio', '/stats', '/heap', '/reset', '/whoami', '/wisews' ],
+        context: [ '/token', '/stty', '/gpio', '/stats', '/heap', '/reset', '/whoami', '/ws' ],
         target: 'http://localhost:7681',
         ws: true
     }]

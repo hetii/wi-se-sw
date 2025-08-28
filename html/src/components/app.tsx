@@ -13,7 +13,7 @@ const host = window.location.host;
 const path = window.location.pathname.replace(/[/]+$/, '');
 const restUrl = [window.location.protocol, '//', host, path].join('');
 const wsProtocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
-const wsUrl = [wsProtocol, '//', host, path, '/wisews', window.location.search].join('');
+const wsUrl = [wsProtocol, '//', host, path, '/ws', window.location.search].join('');
 
 const clientOptions = {
     rendererType: 'webgl',

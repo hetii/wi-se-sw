@@ -48,7 +48,7 @@ void setup() {
     }
 
     httpd = new AsyncWebServer(HTTP_LISTEN_PORT);
-    websocket = new AsyncWebSocket("/wisews");
+    websocket = new AsyncWebSocket("/ws");
     ttyd = new TTY(token, websocket);
     server = new WiSeServer(token, httpd, websocket, ttyd);
 

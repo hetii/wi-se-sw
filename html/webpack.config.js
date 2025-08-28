@@ -74,7 +74,7 @@ const devConfig =  {
         compress: true,
         port: 9000,
         proxy: [{
-            context: [ '/token', '/stty', '/gpio', '/stats', '/heap', '/reset', '/whoami', '/wisews' ],
+            context: [ '/token', '/stty', '/gpio', '/stats', '/heap', '/reset', '/whoami', '/ws' ],
             target: 'http://localhost:7681',
             ws: true
         }]
